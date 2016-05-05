@@ -1,0 +1,18 @@
+OVERVIEW:
+
+COMMANDS:
+'spacebar'  - Pause Animation
+'f'			- Toggle Fast-Forward
+Mouse Controls:
+	right-mouse button + move: - orbit around target
+	left-mouse button + move:  - Slide target along xz-plane (see known-issues)
+	scroll wheel:              - zoom in and out
+	
+NOTES:
+- Works on Linux and Windows.
+- Currently only Sun, Earth and Luna are implemented.  Further design changes can add more planets.
+
+KNOWN ISSUES:
+- Scene Graph is rudementary and not very safe.  Basics added for transformations, but not robust for larger scale designs.
+- Takes a while for the window to close.  Ran Valgrind on Linux and have fixed all memory leaks, but unsure what causes the delay.
+- Animation is slower on Linux.  Unsure why.
